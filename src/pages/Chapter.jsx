@@ -11,7 +11,7 @@ const Chapter = () => {
     const fetchNotes = async () => {
       try {
         console.log("Fetching notes for chapterId:", chapterId);
-        const res = await axios.get(`http://localhost:5000/api/notes/${chapterId}`);
+        const res = await axios.get(`https://smartstudy-backend.vercel.app/api/notes/${chapterId}`);
         setNotes(res.data);
       } catch (error) {
         console.error("Error in fetching notes:", error.message);

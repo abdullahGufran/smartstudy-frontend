@@ -11,7 +11,7 @@ const Class = () => {
     const fetchSubjects = async () => {
       try {
         
-        const res = await axios.get(`http://localhost:5000/api/subjects/${className}`);
+        const res = await axios.get(`https://smartstudy-backend.vercel.app/api/subjects/${className}`);
 
         setSubjects(res.data);
       } catch (error) {

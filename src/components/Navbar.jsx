@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/classes")
+      .get("https://smartstudy-backend.vercel.app//api/classes")
       .then((response) => {
         setClasses(response.data);
       })

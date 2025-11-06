@@ -10,7 +10,7 @@ const Subject = () => {
   useEffect(() => {
     const fetchChapters = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/chapters/${subjectId}`);
+        const res = await axios.get(`https://smartstudy-backend.vercel.app/api/chapters/${subjectId}`);
         setChapters(res.data.map((chapter) => ({
           id: chapter._id,
           title: chapter.title,

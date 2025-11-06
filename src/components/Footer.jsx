@@ -8,7 +8,7 @@ const Footer = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/classes")
+      .get("https://smartstudy-backend.vercel.app/api/classes")
       .then((res) => setClasses(res.data))
       .catch((err) => console.error("Error fetching classes:", err));
   }, []);
