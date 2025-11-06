@@ -8,7 +8,8 @@ const About = () => {
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6 }} 
+        
         className="text-5xl font-extrabold text-blue-700 mb-4 text-center"
       >
         About <span className="text-blue-500">SmartStudy</span>
