@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-impor
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
