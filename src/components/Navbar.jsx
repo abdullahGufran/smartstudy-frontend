@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+impor
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     axios
-      .get("https://smartstudy-backend.vercel.app//api/classes")
+      .get("https://smartstudy-backend.vercel.app/api/classes")
       .then((response) => {
         setClasses(response.data);
       })
