@@ -10,8 +10,10 @@ const Class = () => {
   useEffect(() => {
     const fetchSubjects = async () => {
       try {
+        console.log("Fetching subjects for class:", className);
         
         const res = await axios.get(`https://smartstudy-backend.vercel.app/api/subjects/${className}`);
+        console.log("Fetched subjects:", res.data);
 
         setSubjects(res.data);
       } catch (error) {
